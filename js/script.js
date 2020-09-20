@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const addHeroes = (elem) => {
     let block = document.createElement("div");
     block.classList.add("heroes");
-    block.style.backgroundImage = `url(../${elem.photo})`;
+    block.style.backgroundImage = `url(${elem.photo})`;
     block.innerHTML = `<div class="heroes-name"><p>${elem.name}</p></div>      
       <div class="heroes-info"><p></p></div>`;
     let heroesInfo = block.querySelector(".heroes-info");
